@@ -9,7 +9,7 @@ const FILE_PATH = path.join(FOLDER_PATH, 'fresh.txt');
 
 const create = async () => {
     try {
-        await fs.writeFile(FILE_PATH, 'I am fresh and young', { flag: 'w' });
+        await fs.writeFile(FILE_PATH, 'I am fresh and young', { flag: 'wx' });
     } catch(e) {
         throw new Error('FS operation failed');
     }
