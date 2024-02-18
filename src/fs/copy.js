@@ -7,6 +7,7 @@ const __dirname = path.dirname(__filename);
 const FOLDER_PATH = path.join(__dirname, 'files');
 const COPIED_FOLDER_PATH = path.join(__dirname, 'files_copy');
 
+
 const isFolderExist = async (path) => {
     try {
         await access(path, fs.constants.F_OK);
