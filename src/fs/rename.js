@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const FILE_WRONG = path.join(__dirname, 'files', 'wrongFilename.txt');
-const FILE_RIGHT = path.resolve(__dirname, 'files', 'wrongFilename.txt');
+const FILE_RIGHT = path.resolve(__dirname, 'files', 'properFilename.md');
 
 const isExist = async (path) => {
     try {
